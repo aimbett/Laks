@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from sklearn.externals import joblib
+import joblib
 from m10_model_deployement import predict_image
 from fastapi import FastAPI
 import uvicorn
