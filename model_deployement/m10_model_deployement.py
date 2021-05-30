@@ -7,6 +7,7 @@ from tensorflow import keras
 import joblib
 import sys
 import os
+import Image
 
 batch_size = 32
 img_height = 180
