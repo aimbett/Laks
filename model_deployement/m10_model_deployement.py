@@ -9,6 +9,7 @@ import sys
 import os
 from PIL import Image
 from io import BytesIO
+import numpy as np
 
 batch_size = 32
 img_height = 180
