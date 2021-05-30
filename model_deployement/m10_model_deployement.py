@@ -2,6 +2,7 @@
 #!/usr/bin/python
 
 import pandas as pd
+import tensorflow as tf
 from tensorflow import keras
 #from sklearn.externals import joblib
 import joblib
