@@ -3,6 +3,7 @@ import joblib
 from m10_model_deployement import predict_image
 from fastapi import FastAPI, File, UploadFile
 import uvicorn
+from PIL import Image
 
 #app = Flask(__name__)
 app = FastAPI(title='Laks API')
