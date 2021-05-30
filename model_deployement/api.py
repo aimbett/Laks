@@ -7,30 +7,6 @@ import uvicorn
 #app = Flask(__name__)
 app = FastAPI(title='Laks API')
 
-api = Api(
-    app, 
-    version='1.0', 
-    title='Laks Lice Classificator API',
-    description='Lice Classificator API')
-
-ns = api.namespace('predict', 
-     description='Lice Classifier')
-    
-parser = api.parser()
-
-parser.add_argument(
-    'URL', 
-    type=str, 
-    required=True, 
-    help='URL to be analyzed', 
-    location='args')
-
-resource_fields = api.model('Resource', {
-    'result': fields.String,
-})
-
-
-
 @app.get('/index')
 async def hello_world():
     return "hello world"
