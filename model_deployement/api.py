@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import joblib
 from m10_model_deployement import predict_image
-from fastapi import FastAPI
+from fastapi import FastAPI, File, UploadFile
 import uvicorn
 
 #app = Flask(__name__)
