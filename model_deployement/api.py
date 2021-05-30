@@ -1,6 +1,6 @@
 #!/usr/bin/python
 from sklearn.externals import joblib
-from m10_model_deployment import predict_image
+from m10_model_deployement import predict_image
 from fastapi import FastAPI
 import uvicorn
 
