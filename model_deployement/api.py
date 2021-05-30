@@ -9,15 +9,6 @@ from io import BytesIO
 #app = Flask(__name__)
 app = FastAPI(title='Laks API')
 
-@app.get('/index')
-async def hello_world():
-    return "hello world"
-
-def read_imagefile(file) -> Image.Image:
-    image = Image.open(BytesIO(file))
-    return image
-
-
 @app.post("/predict/image")
 async def predict_api(file: UploadFile = File(...)):
     extension = file.filename.split(".")[-1] in ("jpg", "jpeg", "png", "PNG")
