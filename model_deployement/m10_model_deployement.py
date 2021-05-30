@@ -3,7 +3,8 @@
 
 import pandas as pd
 from tensorflow import keras
-from sklearn.externals import joblib
+#from sklearn.externals import joblib
+import joblib
 import sys
 import os
 
