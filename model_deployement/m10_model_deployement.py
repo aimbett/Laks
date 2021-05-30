@@ -8,6 +8,7 @@ import joblib
 import sys
 import os
 from PIL import Image
+from io import BytesIO
 
 batch_size = 32
 img_height = 180
