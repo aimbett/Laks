@@ -7,7 +7,7 @@ from PIL import Image
 from io import BytesIO
 
 #app = Flask(__name__)
-app = FastAPI(title='Laks API')
+app = FastAPI(title='laks.io')
 
 
 def read_imagefile(file) -> Image.Image:
